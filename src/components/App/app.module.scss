@@ -1,0 +1,46 @@
+.wrapper {
+	min-height: 100svh;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.main {
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 15px;
+	flex: 1 0 auto;
+}
+
+.clockList {
+	display: grid;
+	grid-template-columns: repeat(5, 220px);
+	justify-items: center;
+	align-items: center;
+}
+
+.loader {
+	position: absolute !important;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%) !important;
+}
+
+@media (max-width: 1140px) {
+	.clockList {
+		grid-template-columns: repeat(3, 220px);
+	}
+}
+
+@media (max-width: 720px) {
+	.clockList {
+		grid-template-columns: repeat(2, 220px);
+	}
+}
+
+@media (max-width: 490px) {
+	.clockList {
+		grid-template-columns: repeat(1, 220px);
+	}
+}

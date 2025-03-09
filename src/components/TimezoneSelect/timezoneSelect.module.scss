@@ -1,0 +1,27 @@
+.select {
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	text-align: center;
+	width: 80%;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	cursor: pointer;
+	transition: border-color 0.5s ease-in-out;
+
+	&:hover {
+		border-color: var(--orange-color);
+	}
+
+	&:focus {
+		outline: none;
+		border-color: var(--orange-color);
+		box-shadow: 0 0 5px rgba(255, 128, 0, 0.5);
+	}
+
+	&::-ms-expand {
+		display: none;
+	}
+}

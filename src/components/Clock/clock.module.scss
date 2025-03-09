@@ -1,0 +1,67 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	max-width: 220px;
+	margin-bottom: 20px;
+}
+
+.clock {
+	width: 200px;
+	height: 200px;
+	border: 1px solid var(--black-color);
+	border-radius: 50%;
+	position: relative;
+	background-color: #ececec;
+}
+
+.axis {
+	width: 4px;
+	height: 4px;
+	background-color: var(--black-color);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 51%;
+	transform: translate(-50%, -50%);
+}
+
+.mark {
+	position: absolute;
+	width: 2px;
+	height: 8px;
+	background-color: var(--black-color);
+	top: 5px;
+	left: 50%;
+	transform-origin: center 95px;
+}
+
+.handHour,
+.handMinute,
+.handSecond {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform-origin: bottom;
+	transform: translateX(-50%);
+}
+
+.handHour,
+.handMinute {
+	width: 0;
+	height: 0;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-bottom: 40px solid var(--black-color);
+}
+
+.handMinute {
+	border-bottom: 80px solid var(--black-color);
+}
+
+.handSecond {
+	width: 1px;
+	height: 95px;
+	background-color: red;
+}
